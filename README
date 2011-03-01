@@ -4,3 +4,27 @@ Wrapper around $.couch used to manage authentication
 in a backbone event-based fashion
 
 dependecies: underscore, Backbone.js, couch, jQuery
+
+
+example usage:
+
+var auth = new CouchAuth(); // TODO replace it with singleton?
+
+// signup
+auth.signup("bob", "secret", {success: function(){
+  //success callback
+});
+
+// login
+auth.login("bob", "secret", {success: function(){
+  //success callback
+});
+
+// logout
+auth.logout();
+
+// test if user is authenticated
+auth.isLogin(function(auth) {
+  // auth = true if user is authenticated and false otherwise 
+});
+
