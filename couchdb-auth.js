@@ -1,9 +1,9 @@
 // CouchAuth
 
 // Wrapper around $.couch used to manage authentication 
-// in a backbone event-based fasion
+// in a backbone event-based fashion
 
-// dependecies: underscore, backbone, couch, jQuery
+// dependecies: underscore, Backbone.js, couch, jQuery
 
 // CouchAuth constructor
 function CouchAuth() {}
